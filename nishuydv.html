@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nishu Yadav | Luxury • Travel • Fashion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff4f4;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      margin: 10px 0;
+      color: #e91e63;
+      animation: slideIn 1s ease-out;
+    }
+
+    .bio-line {
+      font-size: 1.1rem;
+      color: #777;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeInUp 1s ease-in-out forwards;
+      animation-delay: 1s;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 10px;
+      font-style: italic;
+      opacity: 0;
+      animation: fadeInUp 1s ease-in-out forwards;
+      animation-delay: 1.3s;
+    }
+
+    .social-links a {
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #e91e63;
+      display: inline-block;
+      opacity: 0;
+      animation: fadeInUp 1s ease-in-out forwards;
+    }
+
+    .social-links a:nth-child(1) { animation-delay: 1.5s; }
+    .social-links a:nth-child(2) { animation-delay: 1.7s; }
+    .social-links a:nth-child(3) { animation-delay: 1.9s; }
+    .social-links a:nth-child(4) { animation-delay: 2.1s; }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    .video-section {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #aaa;
+      opacity: 0;
+      animation: fadeInUp 1s ease-in-out forwards;
+      animation-delay: 2.3s;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideIn {
+      from {transform: translateY(-30px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="profile.jpg" alt="Nishu Yadav" class="profile-img"/>
+    <h1>Nishu Yadav</h1>
+    <p class="bio-line">Luxury • Travel • Fashion • Lifestyle • Fitness</p>
+    <p class="tagline">"Har pal mein khubsurti hai, bas nazar chahiye dekhne wali..."</p>
+
+    <div class="social-links">
+      <a href="https://instagram.com/nishyadav18" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@nishyadav18" target="_blank">YouTube Channel</a>
+      <a href="mailto:nishyadav847@gmail.com" target="_blank">Mail Me</a>
+      <a href="https://www.snapchat.com/add/Nishuu__yadav16" target="_blank">Snapchat</a>
+    </div>
+
+    <div class="video-section">
+      <iframe src="https://www.youtube.com/embed/PMhuDdisaME" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/R-z3J50jh94" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/GTcZ6-bXOpE" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/fqUcqyETD4c" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+      <p>Made with ❤ by Vishal</p>
+    </footer>
+  </div>
+</body>
+</html>
